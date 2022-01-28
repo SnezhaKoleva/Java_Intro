@@ -12,7 +12,7 @@ public class MyFirstJava {
         String name = scanner.nextLine();
 
         System.out.println("Please enter your hobby");
-        String hobby = scanner.next();
+        String hobby = scanner.nextLine();
 
         System.out.println("Hi " + name + "\n I think" +  " " + hobby +" is a nice hobby " );
 
