@@ -20,10 +20,10 @@ public class StringActions {
            System.out.println(movieName.equals(bookName));
 
            String [] stringArray = book.split(" ");
-          /* Without format
+          /* Without String.format
           System.out.println( "\"" + book +"\" " + "has " + stringArray.length +" words"); */
 
-          //By using format
+          //By using String.format
            System.out.println(String.format("\" %s \" has %d words ",book ,stringArray.length));
           // System.out.printf("\" %s \"has %d words ",book ,stringArray.length);
 
