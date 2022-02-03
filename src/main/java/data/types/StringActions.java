@@ -24,8 +24,9 @@ public class StringActions {
           System.out.println( "\"" + book +"\" " + "has " + stringArray.length +" words"); */
 
           //By using String.format
-           System.out.println(String.format("\" %s \" has %d words ",book ,stringArray.length));
-          // System.out.printf("\" %s \"has %d words ",book ,stringArray.length);
+
+           //System.out.println(String.format("\" %s \" has %d words ",book ,stringArray.length));
+          System.out.printf("\" %s \"has %d words \n",book ,stringArray.length);
 
 
            String movie = "Are you sure that your favourite movie and book are :";
