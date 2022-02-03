@@ -1,6 +1,5 @@
 package qa.automation;
 
-
 import java.util.Scanner;
 
 public class MyFirstJava {
