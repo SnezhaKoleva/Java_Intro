@@ -20,7 +20,7 @@ public class MoreOperations {
         result = num3 > ((num1 > num2) ? num1 : num2) ? num3 : ((num1 > num2) ? num1 : num2);
         System.out.println("The largest number is :" + result);
 
-        printAreaPerRectangle(2,8);
+        printAreaPerRectangle(2.0,8.3);
 
         System.out.println("Please enter number ");
         int evenOdd = scanner.nextInt();
