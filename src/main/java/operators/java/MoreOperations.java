@@ -1,4 +1,4 @@
-5
+
 package operators.java;
 
 import java.time.DayOfWeek;
