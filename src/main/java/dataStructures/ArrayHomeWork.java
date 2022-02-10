@@ -35,8 +35,8 @@ public class ArrayHomeWork {
         int[] elements = new int[6];
         for (int i = 0; i < elements.length; i++) {
             System.out.println("Please enter a number ");
-            int number = scanner.nextInt();
-            elements[i] = number;
+            elements[i]  = scanner.nextInt();
+
         }
         for (int i = 0; i < elements.length; i++) {
 
