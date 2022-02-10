@@ -9,34 +9,34 @@ public class ArrayHomeWork {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         //Array i= i * 5
         int[] arrayInts = new int[20];
-
+        System.out.println( "The elements of the Array are : ");
         for (int i = 0; i < arrayInts.length; i++) {
             arrayInts[i] = i * 5;
         }
-
         for (int i = 0; i < arrayInts.length; i++) {
-            System.out.println("The elements of the Array are : " + arrayInts[i]);
-
+            System.out.println( arrayInts[i]);
         }
+
         // Average value
         int sum = 0;
         for (int i = 0; i < arrayInts.length; i++) {
             sum += arrayInts[i];
         }
         int averageValue = sum / arrayInts.length;
-
         System.out.printf("The average value is : %d%n", averageValue);
+
 
         // Even Odd Sum
         int evenSum = 0;
         int oddSum = 0;
         int[] elements = new int[6];
+
         for (int i = 0; i < elements.length; i++) {
             System.out.println("Please enter a number ");
             elements[i]  = scanner.nextInt();
-
         }
         for (int i = 0; i < elements.length; i++) {
 
@@ -48,6 +48,8 @@ public class ArrayHomeWork {
         }
         System.out.printf("The sum of even numbers is %d%n", evenSum);
         System.out.printf("The sum of odd numbers is %d%n", oddSum);
+
+
 
         System.out.println("Please enter parameter ");
         int N = scanner.nextInt();
