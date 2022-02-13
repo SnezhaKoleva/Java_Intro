@@ -3,12 +3,7 @@ package opp.HomeWork;
 public class Test {
 
 
-
     public static void main(String[] args){
-
-
-
-
 
         Cat murfy = new Cat( "Murfy",new Owner("Ani"),2, true);
 
