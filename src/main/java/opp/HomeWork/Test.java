@@ -14,5 +14,7 @@ public class Test {
        murfy.sleep();
        boby.sleep();
        boby.printData();
+       Owner ani=new Owner("Ani");
+       ani.sleep();
     }
 }
