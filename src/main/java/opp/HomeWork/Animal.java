@@ -57,7 +57,9 @@ public class Animal implements AnimalActions {
     public void printData(){
         System.out.printf("Cat  %s age of %d lives with it's owner %s.%n ",nameCat,age, getOwner().getOwnerName());
         if (isBlack()){
-            System.out.printf("%s is a black cat .\n",nameCat);
+            System.out.printf("%s is a black cat .%n",nameCat);
+        }else {
+            System.out.printf("%s isn't a black cat.%n ",nameCat );
         }
 
 
@@ -66,7 +68,8 @@ public class Animal implements AnimalActions {
     @Override
     public void sleep() {
 
-        System.out.printf("Cat %s is sleeping all the day %n",nameCat);
+        System.out.printf("Cat %s is sleeping all the day .%n",nameCat);
 
     }
 }
+

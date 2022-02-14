@@ -1,6 +1,7 @@
 package opp.HomeWork;
 
 public class Owner implements AnimalActions {
+
     private String ownerName;
 
     public String getOwnerName() {
@@ -22,7 +23,7 @@ public class Owner implements AnimalActions {
 
     @Override
     public void sleep() {
-        System.out.println( getOwnerName() + " works home office.");
+        System.out.println(getOwnerName() + " works home office.");
 
     }
 }

@@ -2,19 +2,22 @@ package opp.HomeWork;
 
 public class Test {
 
+    public static void main(String[] args) {
+        Cat murfy = new Cat( "Murfy",new Owner("Ani"),2,true);
+        Cat boby = new Cat("Boby",new Owner("Reni"),5,false);
 
-    public static void main(String[] args){
+        murfy.printData();
+        murfy.homeStay();
+        murfy.sleep();
+        Owner ani = new Owner("Ani");
+        ani.sleep();
 
-        Cat murfy = new Cat( "Murfy",new Owner("Ani"),2, true);
+        boby.printData();
+        boby.homeStay();
+        boby.sleep();
+        Owner reni =new Owner("Reni");
+        reni.sleep();
 
-        Cat boby = new Cat( "Boby",new Owner("Reni"),5,false );
 
-       murfy.printData();
-       murfy.homeStay();
-       murfy.sleep();
-       boby.sleep();
-       boby.printData();
-       Owner ani=new Owner("Ani");
-       ani.sleep();
     }
 }
