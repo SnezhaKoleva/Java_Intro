@@ -1,5 +1,6 @@
 package hw.methods;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -22,13 +23,17 @@ public class Main {
         MyMethods.numbersEqualPositive(number);
 
 
+        double [] a1=new double[4];
 
-        System.out.println("Please enter two numbers");
-        Double a1 = scanner.nextDouble();
-        Double b1 = scanner.nextDouble();
-        MyMethods.doubleAverage(a1, b1);
-        MyMethods.doubleSum(a1, b1);
+        System.out.println("Please enter four numbers");
+        for (int i = 0; i < a1.length; i++) {
+            a1[i]= scanner.nextDouble();
+        }
+
+        MyMethods.calculateAverage(a1);
+
+        }
+
         }
 
 
-    }

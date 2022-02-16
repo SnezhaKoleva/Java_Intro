@@ -39,23 +39,36 @@ public class MyMethods {
     }
 
 
+    public static double calculateAverageSum(double resultAverage1, double resultAverage2)
+    {
+        double resultAverageSum = resultAverage1 + resultAverage2;
+        System.out.printf("The sum of the averages is :" +resultAverageSum);
+        return resultAverageSum;
+    }
 
-        public static double doubleAverage ( double a1, double b1)
-        {
-            System.out.println("The average is : " + (a1 + b1) / 2);
-            return (a1 + b1) / 2;
-        }
+    public static void calculateAverage ( double a1[]) {
+            double resultAverage1= 0;
+            double resultAverage2= 0;
+            for (int i = 0; i < a1.length - 1; i++) {
+                resultAverage1 =(a1[0] + a1[1]) / 2;
+                resultAverage2 =(a1[2] + a1[3])/2;}
+                System.out.println("The average of the first two numbers is : " + resultAverage1);
+            System.out.println("The average of the second two numbers is : " + resultAverage2);
 
-        public static double doubleSum ( double a1, double b1){
+    MyMethods.calculateAverageSum(resultAverage1,resultAverage2);
 
-            System.out.println("The sum is : " + (a1 + b1));
+    }
 
-            return a1 + b1;
 
-        }
+
+
+
 
 
     }
+
+
+
 
 
 
