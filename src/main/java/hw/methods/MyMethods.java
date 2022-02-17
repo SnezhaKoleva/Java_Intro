@@ -5,7 +5,7 @@ public class MyMethods {
 
     public static void controlPassWord(String passWord) {
 
-        if (!(passWord.length() > 8 && passWord.matches(".*[0-9].*")
+        if (!(passWord.length() >= 8 && passWord.matches(".*[0-9].*")
                 && passWord.matches(".*[a-z].*") && passWord.matches(".*[A-Z].*")
                 && passWord.matches(".*[!,@,#,$,%,^,&,*, ].*")
                 && ! passWord.matches(".*[ ].*"))) {
