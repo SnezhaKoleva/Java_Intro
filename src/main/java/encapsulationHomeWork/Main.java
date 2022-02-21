@@ -46,12 +46,7 @@ public class Main {
         //    second case - provide new information for Gerard_Pique-Gerard_Pique;195;82;82;89;68
 
 
-         // third case
-         //Team.printRating(barcelona);
-
         }
-
-
 
         System.out.println("Enter a team to show it's rating");
         String statsTeam=scanner.nextLine();
@@ -62,6 +57,9 @@ public class Main {
 
             String noStatsToShow=printMissingTeam(statsTeam);
         }else {
+
+            //  Enter Barcelona OR barcelona OR BARCELONA to receive the expected output
+            // third case
             Team.printRating(barcelona);
         }
 
