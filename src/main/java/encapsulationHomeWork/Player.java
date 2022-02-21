@@ -5,8 +5,8 @@ public class Player {
     private String name;
     public String endurance="Endurance";
     public String sprint="Sprint";
-   public String dribble="Dribble";
-   public String passing="Passing";
+    public String dribble="Dribble";
+    public String passing="Passing";
     public String shooting="Shooting";
     private int rangeEndurance;
     private int rangeSprint;
