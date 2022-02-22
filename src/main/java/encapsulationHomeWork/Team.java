@@ -35,13 +35,13 @@ public class Team {
 
 
     public void addPlayer( Player player) {
-
+        if (player.correctStats()){
         this.teamPlayer.add(player);
 
       /*  System.out.printf("%s ; %s ; %d;%d;%d;%d;%d %n ", this.getName(), player.getName(),
                     player.getRangeEndurance(), player.getRangeSprint(),
                     player.getRangeDribble(), player.getRangePassing(), player.getRangeShooting()); */
-        }
+        }}
 
     public void removePlayer( Player player)
         {
@@ -54,15 +54,16 @@ public class Team {
         }
 
     public static void printRating(Team team) {
-        int sum = 0;
-        double resultPlayer = 0;
+        double sum = 0;
         double resultTeam;
-        for (Player player : team.teamPlayer) {
-            resultPlayer=Player.AverageLevel(player);
-            sum += Math.round(resultPlayer) ;}
+
+        for (Player player : team.teamPlayer){
+        sum+=Player.AverageLevel(player);}
+
         if (sum==0){resultTeam=0;}
         else {
-        resultTeam = sum / team.teamPlayer.size();}
+            resultTeam = sum / team.teamPlayer.size();}
+
         System.out.printf("%s - %d %n ",team.getName(),Math.round(resultTeam));
         }
 

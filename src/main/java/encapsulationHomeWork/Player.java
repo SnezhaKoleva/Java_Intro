@@ -2,6 +2,7 @@ package encapsulationHomeWork;
 
 public class Player {
 
+    private static Player player;
     private String name;
     public String endurance="Endurance";
     public String sprint="Sprint";
@@ -98,12 +99,21 @@ public class Player {
 
     }
 
-    public  static double AverageLevel(Player player){
+     public  static double AverageLevel(Player player){
         double averageLevel = 0;
-     averageLevel=(player.getRangeEndurance()+player.getRangeSprint()+player.getRangeDribble()+
-             player.getRangePassing() +player.getRangeShooting())/5;
-
+        int averageStats = 0;
+     averageStats=(player.getRangeEndurance()+player.getRangeSprint()+player.getRangeDribble()+
+             player.getRangePassing() +player.getRangeShooting());
+         if (averageStats==0){ averageLevel=0 ;}else {
+         averageLevel= averageStats / 5 ;}
 
     return averageLevel;
 
-}}
+} public boolean correctStats(){
+      return rangeEndurance >= 0 && rangeEndurance <=100 &&
+              rangeSprint >=0 && rangeSprint <=100 &&
+              rangeDribble >=0 && rangeDribble <=100 &&
+              rangePassing >=0 && rangeDribble <=100 &&
+              rangeShooting >=0 && rangeShooting <=100 ;
+    }
+}
