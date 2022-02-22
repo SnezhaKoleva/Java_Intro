@@ -14,7 +14,7 @@ public class Main {
         Player lionel_Messi = new Player("Lionel_Messi",75,85,
                 84,92,67);
 
-        Player gerard_Pique =new Player( "Gerard_Pique",195,
+        Player gerard_Pique =new Player( "Gerard_Pique",95,
                 82,82,89,68);
 
         Team barcelona=new Team("Barcelona");
