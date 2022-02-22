@@ -36,13 +36,11 @@ public class Team {
 
     public void addPlayer( Player player) {
 
-
         this.teamPlayer.add(player);
 
-
-         System.out.printf("%s ; %s ; %d;%d;%d;%d;%d %n ", this.getName(), player.getName(),
+      /*  System.out.printf("%s ; %s ; %d;%d;%d;%d;%d %n ", this.getName(), player.getName(),
                     player.getRangeEndurance(), player.getRangeSprint(),
-                    player.getRangeDribble(), player.getRangePassing(), player.getRangeShooting());
+                    player.getRangeDribble(), player.getRangePassing(), player.getRangeShooting()); */
         }
 
     public void removePlayer( Player player)
@@ -60,9 +58,7 @@ public class Team {
         double resultPlayer = 0;
         double resultTeam;
         for (Player player : team.teamPlayer) {
-
-            resultPlayer=(player.getRangeEndurance()+player.getRangeSprint()+player.getRangeDribble()+
-                    player.getRangePassing() +player.getRangeShooting())/5;
+            resultPlayer=Player.AverageLevel(player);
             sum += Math.round(resultPlayer) ;}
         if (sum==0){resultTeam=0;}
         else {

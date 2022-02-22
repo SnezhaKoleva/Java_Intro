@@ -98,12 +98,12 @@ public class Player {
 
     }
 
-    public static void AverageLevel(Player player){
+    public  static double AverageLevel(Player player){
         double averageLevel = 0;
      averageLevel=(player.getRangeEndurance()+player.getRangeSprint()+player.getRangeDribble()+
              player.getRangePassing() +player.getRangeShooting())/5;
 
-        System.out.printf("%s : average level - %d %n",player.getName(),Math.round(averageLevel));
-    }
 
-}
+    return averageLevel;
+
+}}
