@@ -1,6 +1,6 @@
 package human;
 
-import aimals.Mammal;
+import animals.Mammal;
 
 public class
 Person extends Mammal {
@@ -9,15 +9,6 @@ Person extends Mammal {
     public Person(String name) {
         super(name);}
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
-    public void setName(String name) {
-        super.setName(name);
-    }
 
     @Override
     protected void eatFood(String hungryName, String food) {
