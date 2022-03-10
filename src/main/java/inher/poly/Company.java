@@ -37,9 +37,9 @@ public class Company {
     }
 
     public void setBulstat(String bulstat) {
-             if(! (bulstat.length()==10
+             if ( !(bulstat.length()==10
                 &&  bulstat.matches(".*[A-Z].*")
-                &&   bulstat.matches(".*[0-9].*")
+                &&  bulstat.matches(".*[0-9].*")
                 && !bulstat.matches(".*[!,@,#,$,%,^,&,*,-,_,<,>,/,\\,|,(,),.,,,].*")
                 && !bulstat.matches(".*[ ].*"))){
 
