@@ -1,4 +1,4 @@
-package inher.poly.hw;
+package inher.poly;
 
 public class Company {
 
@@ -40,9 +40,8 @@ public class Company {
         if(! (bulstat.length()==10
                 &&  bulstat.matches(".*[A-Z].*")
                 &&   bulstat.matches(".*[0-9].*")
-         && !bulstat.matches(".*[!,@,#,$,%,^,&,*,-,_,<,>,/,\\,|,(,),.,,,].*")
-
-        && !bulstat.matches(".*[ ].*"))){
+                && !bulstat.matches(".*[!,@,#,$,%,^,&,*,-,_,<,>,/,\\,|,(,),.,,,].*")
+                && !bulstat.matches(".*[ ].*"))){
 
             System.out.println("Bulstat : Invalid data !");
         }

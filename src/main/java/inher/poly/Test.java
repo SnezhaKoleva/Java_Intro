@@ -1,4 +1,4 @@
-package inher.poly.hw;
+package inher.poly;
 
 public class Test {
 

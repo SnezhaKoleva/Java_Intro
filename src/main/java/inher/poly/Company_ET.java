@@ -1,4 +1,4 @@
-package inher.poly.hw;
+package inher.poly;
 
 public class Company_ET extends Company implements Invoice {
     private String ownerName;
@@ -49,8 +49,8 @@ public class Company_ET extends Company implements Invoice {
    public double calculateProfit(){
         double result=0;
         result=currentCapital-initialCapital;
-       System.out.printf("%s profit is %f%n",getName(),result);
-       return result;
+        System.out.printf("%s profit is %f%n",getName(),result);
+        return result;
    }
 
     @Override
