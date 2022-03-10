@@ -37,8 +37,5 @@ public class MathMethods {
             System.out.print(randomNumber + ";");
         }
 
-
     }
-
-
 }

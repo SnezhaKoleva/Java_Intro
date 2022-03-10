@@ -17,6 +17,7 @@ public class TestMath {
         System.out.println("Please enter a number");
         int c = scanner.nextInt();
 
+
         MathMethods.returnMaxNumber(a,b,c);
 
 
