@@ -4,11 +4,6 @@ public class Player {
 
     private static Player player;
     private String name;
-    public String endurance="Endurance";
-    public String sprint="Sprint";
-    public String dribble="Dribble";
-    public String passing="Passing";
-    public String shooting="Shooting";
     private int rangeEndurance;
     private int rangeSprint;
     private int rangeDribble;
@@ -36,7 +31,7 @@ public class Player {
         if (rangeEndurance>=0 && rangeEndurance<=100)
         this.rangeEndurance = rangeEndurance;
         else {
-            System.out.printf("%s should be between 0 and 100. \n",this.endurance);
+            System.out.println("Endurance should be between 0 and 100.");
         }
     }
 
@@ -48,7 +43,7 @@ public class Player {
         if (rangeSprint>=0 && rangeSprint<=100)
         this.rangeSprint = rangeSprint;
         else {
-            System.out.printf("%s should be between 0 and 100. \n",this.sprint);
+            System.out.println("Sprint should be between 0 and 100. ");
 
         }
     }
@@ -61,7 +56,7 @@ public class Player {
         if (rangeDribble>=0 && rangeDribble<=100)
         this.rangeDribble = rangeDribble;
         else {
-            System.out.printf("%s should be between 0 and 100. \n",this.dribble);
+            System.out.println("Dribble should be between 0 and 100. ");
         }
     }
 
@@ -73,7 +68,7 @@ public class Player {
         if (rangePassing>=0 && rangePassing<=100)
             this.rangePassing=rangePassing;
         else {
-            System.out.printf("%s should be between 0 and 100. \n",this.passing);
+            System.out.println("Passing should be between 0 and 100.");
         }
         }public int getRangeShooting() {
         return rangeShooting;
@@ -83,7 +78,7 @@ public class Player {
         if (rangeShooting>=0 && rangeShooting<=100)
         this.rangeShooting = rangeShooting;
         else {
-            System.out.printf("%s should be between 0 and 100. \n",this.shooting);
+            System.out.println("Shooting should be between 0 and 100.");
 
 
 
@@ -109,11 +104,14 @@ public class Player {
 
     return averageLevel;
 
-} public boolean correctStats(){
-      return rangeEndurance >= 0 && rangeEndurance <=100 &&
-              rangeSprint >=0 && rangeSprint <=100 &&
-              rangeDribble >=0 && rangeDribble <=100 &&
-              rangePassing >=0 && rangePassing <=100 &&
-              rangeShooting >=0 && rangeShooting <=100 ;
-    }
 }
+          public  boolean correctStats(){
+            return    rangeEndurance >= 0 && rangeEndurance <= 100 &&
+                      rangeSprint >= 0 && rangeSprint<= 100 &&
+                      rangeDribble>= 0 && rangeDribble <= 100 &&
+                      rangePassing>= 0 && rangePassing <= 100 &&
+                      rangeShooting>= 0 && rangeShooting <= 100;
+
+    }}
+
+
