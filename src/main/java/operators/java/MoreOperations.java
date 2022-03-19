@@ -20,7 +20,7 @@ public class MoreOperations {
         result = num3 > ((num1 > num2) ? num1 : num2) ? num3 : ((num1 > num2) ? num1 : num2);
         System.out.println("The largest number is :" + result);
 
-        printAreaPerRectangle(2.0,8.3);
+        printAreaPerimeterRectangle(2.0,8.3);
 
         System.out.println("Please enter number ");
         int evenOdd = scanner.nextInt();
@@ -31,7 +31,7 @@ public class MoreOperations {
         printDayOfTheWeek(dayOfTheWeek);
     }
 
-    public static void printAreaPerRectangle(double length, double breadth){
+    public static void printAreaPerimeterRectangle(double length, double breadth){
 
         System.out.println("The rectangle's perimeter is : " + 2*(length+breadth));
         System.out.println("The rectangle's area is : " + length * breadth);
