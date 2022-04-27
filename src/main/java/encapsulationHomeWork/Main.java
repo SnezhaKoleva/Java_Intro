@@ -9,8 +9,6 @@ public class Main {
 
         Scanner scanner=new Scanner(System.in);
 
-
-
         Player lionel_Messi = new Player("Lionel_Messi",75,85,
                 84,92,67);
 
@@ -18,8 +16,6 @@ public class Main {
                 82,82,89,68);
 
         Team barcelona=new Team("Barcelona");
-
-
 
 
         System.out.println("Choose a team to add a player ");

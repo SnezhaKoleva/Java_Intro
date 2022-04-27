@@ -105,13 +105,7 @@ public class Player {
     return averageLevel;
 
 }
-          public  boolean correctStats(){
-            return    rangeEndurance >= 0 && rangeEndurance <= 100 &&
-                      rangeSprint >= 0 && rangeSprint<= 100 &&
-                      rangeDribble>= 0 && rangeDribble <= 100 &&
-                      rangePassing>= 0 && rangePassing <= 100 &&
-                      rangeShooting>= 0 && rangeShooting <= 100;
 
-    }}
+}
 
 

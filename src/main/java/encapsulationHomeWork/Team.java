@@ -35,25 +35,20 @@ public class Team {
 
 
     public void addPlayer( Player player) {
-        if (player.correctStats()){
-        this.teamPlayer.add(player);
+            this.teamPlayer.add(player);
 
-      /*  System.out.printf("%s ; %s ; %d;%d;%d;%d;%d %n ", this.getName(), player.getName(),
-                    player.getRangeEndurance(), player.getRangeSprint(),
-                    player.getRangeDribble(), player.getRangePassing(), player.getRangeShooting()); */
-        }}
+    }
 
-    public void removePlayer( Player player)
-        {
-        if (this.teamPlayer.contains(player)) {
-            this.teamPlayer.remove(player);
-        } else {
-            System.out.printf("Player %s is not in %s team. \n", player.getName(), this.name);
-        }
+        public void removePlayer(Player player){
+            if (this.teamPlayer.contains(player)) {
+                this.teamPlayer.remove(player);
+            } else {
+                System.out.printf("Player %s is not in %s team. \n", player.getName(), this.name);
+            }
 
         }
 
-    public static void printRating(Team team) {
+    public static void printRating(Team team){
         double sum = 0;
         double resultTeam;
 
