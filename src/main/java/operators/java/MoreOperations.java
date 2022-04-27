@@ -1,7 +1,5 @@
-
 package operators.java;
 
-import java.time.DayOfWeek;
 import java.util.Scanner;
 
 public class MoreOperations {
@@ -73,9 +71,6 @@ public class MoreOperations {
 
                       default:
                       System.out.println("Not correct option");
-
-
-
 
         }
 
