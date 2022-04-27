@@ -7,7 +7,6 @@ public class Animal implements AnimalActions {
         setOwner(owner);
         setAge(age);
         setBlack(black);
-
     }
 
     private String nameCat;

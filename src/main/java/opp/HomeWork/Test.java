@@ -18,6 +18,5 @@ public class Test {
         Owner reni =new Owner("Reni");
         reni.sleep();
 
-
     }
 }

@@ -24,7 +24,6 @@ public class Owner implements AnimalActions {
     @Override
     public void sleep() {
         System.out.println(getOwnerName() + " works home office.");
-
     }
 }
 
