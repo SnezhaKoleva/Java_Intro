@@ -20,6 +20,4 @@ public class Test  {
         String food2= scanner.nextLine();
         bobi.eatFood("Bobi",food2);
     }
-
-
 }

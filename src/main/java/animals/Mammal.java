@@ -21,6 +21,5 @@ public class Mammal {
     protected void eatFood(String hungryName, String food){
 
         System.out.printf("%s eats %s%n",hungryName,food);
-
     }
 }
