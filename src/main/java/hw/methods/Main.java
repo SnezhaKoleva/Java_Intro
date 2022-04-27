@@ -1,6 +1,5 @@
 package hw.methods;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -12,7 +11,6 @@ public class Main {
         System.out.println("Please enter your password");
         String passWord = scanner.nextLine();
         MyMethods.controlPassWord(passWord);
-
 
 
         double[] number = new double[3];

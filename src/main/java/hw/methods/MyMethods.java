@@ -16,8 +16,6 @@ public class MyMethods {
         }
     }
 
-
-
     public static void numbersEqualPositive(double number[]) {
         for (int i = 0; i < number.length; i++) {
             if (number[i] > 0) {
@@ -58,12 +56,6 @@ public class MyMethods {
     MyMethods.calculateAverageSum(resultAverage1,resultAverage2);
 
     }
-
-
-
-
-
-
 
     }
 
